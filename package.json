@@ -1,14 +1,11 @@
 {
-  "name": "next-tailwind-motion",
+  "name": "next-interactive-boilerplate",
   "description": "A simple Next.js starter kit with TailwindCSS (JIT) and Framer Motion preconfigured",
-  "author": "Sam Goddard <hello@samgoddard.co.uk> (https://samgoddard.co.uk)",
+  "author": "Sam Goddard <hello@samgoddard.co.uk> (https://samgoddard.co.uk), Hendhy Hutomo <hello@hendhyhutomo.com>",
   "version": "1.0.0",
   "repository": {
     "type": "git",
-    "url": "git@github.com:samuelgoddard/next-tailwind-motion.git"
-  },
-  "bugs": {
-    "url": "https://github.com/samuelgoddard/next-tailwind-motion/issues"
+    "url": "git@github.com:tomostudio/next-interactive-boilerplate.git"
   },
   "license": "ISC",
   "keywords": [
@@ -19,7 +16,7 @@
     "motion",
     "preact"
   ],
-  "homepage": "https://sg-next-tailwind-motion.vercel.app/",
+  "homepage": "INSERT WEBSITE",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -27,6 +24,7 @@
   },
   "dependencies": {
     "framer-motion": "^4.1.17",
+    "gsap": "^3.7.0",
     "locomotive-scroll": "^4.1.1",
     "next": "^11.0.1",
     "next-seo": "^4.26.0",

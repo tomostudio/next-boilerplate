@@ -1,9 +1,8 @@
-# Next Tailwind Framer Motion Boilerplate
-Demo: [https://sg-next-tailwind-motion.vercel.app/](https://sg-next-tailwind-motion.vercel.app/)
+# Next Interactive Boilerplate
 
-Locomotive Scroll Demo: [https://sg-next-tailwind-motion-locomotive.vercel.app/](https://sg-next-tailwind-motion-locomotive.vercel.app/)
-
-A simple [Next.js](https://nextjs.org/) boilerplate with [TailwindCSS](https://tailwindcss.com/) ([JIT](https://tailwindcss.com/docs/just-in-time-mode)), [Framer Motion](https://www.framer.com/motion/), and a few other nice bits preconfigured.
+Demo: [INCOMING]
+A simple [Next.js](https://nextjs.org/) boilerplate with [TailwindCSS](https://tailwindcss.com/) [Framer Motion](https://www.framer.com/motion/),  [Locomotive Scroll](https://locomotivemtl.github.io/locomotive-scroll/) and [GSAP Scroll Trigger](https://github.com/greensock/GSAP).
+Developed based on [Samuel Goddard Next Boilerplate](https://github.com/samuelgoddard/next-tailwind-motion.git).
 
 ## ✨ Features
 - [Next](https://nextjs.org/) 11
@@ -13,22 +12,20 @@ A simple [Next.js](https://nextjs.org/) boilerplate with [TailwindCSS](https://t
 - [Preact](https://preactjs.com/) preconfigured instead of React for smaller bundle size*
 - SEO preconfigured with [next-seo](https://github.com/garmeeh/next-seo)
 - [Module Aliasing](https://nextjs.org/docs/advanced-features/module-path-aliases) preconfigured with `jsconfig.json`
-- [Feature branch](https://github.com/samuelgoddard/next-tailwind-motion/tree/locomotive-scroll) with [Locomotive Scroll](https://locomotivemtl.github.io/locomotive-scroll/) preconfigured for smooth, lerp based page scrolling
-- Out the box 100 scores on both mobile &amp; desktop on [Page Speed Insights](https://developers.google.com/speed/pagespeed/insights/?url=https%3A%2F%2Fsg-next-tailwind-motion-locomotive.vercel.app%2F&tab=mobile)
+- [Locomotive Scroll](https://locomotivemtl.github.io/locomotive-scroll/) preconfigured for smooth, lerp based page scrolling
+-  [GSAP Scroll Trigger](https://github.com/greensock/GSAP) preconfigured for custom scroll animation.
 
 _*To remove Preact and switch back to React simply remove the code in `next.config.js`_
 
 ### Roadmap / Coming Soon...
 - Feature branch with [Sanity](https://www.sanity.io/) preconfigured
-- Feature branch with [DatoCMS](https://www.datocms.com/) preconfigured
-- Feature branch with [GSAP](https://greensock.com/gsap/) preconfigured
 
 ## 🚀 Quick start
 
 1.  **Clone the repo**
 
     ```sh
-    git clone https://github.com/samuelgoddard/next-tailwind-motion.git
+    git clone https://github.com/tomostudio/next-interactive-boilerplate.git
     ```
 
 2.  **Start developing**
@@ -36,10 +33,10 @@ _*To remove Preact and switch back to React simply remove the code in `next.conf
     Navigate into your new site’s directory and install the local dependencies first, then run the dev command.
 
     ```sh
-    cd next-tailwind-motion/
+    cd next-interactive-boilerplate/
     
-    npm i
-    npm run dev
+    yarn
+    yarn run dev
     ```
 
 3.  **Open the source code and start editing!**
@@ -54,9 +51,13 @@ _*To remove Preact and switch back to React simply remove the code in `next.conf
     |-- footer.js *// Example footer component*
     |-- header.js *// Example header component*
     |-- layout.js *// Layout component that can be used to wrap your pages in a global layout*
+    |-- scrolltrigger.js *// A container to enable scrolltrigger interaction*
 |-- helpers
     |-- seo.config.js *// default SEO configuration helper, imported in `pages/_app.js`*
     |-- transitions.js *// re-usable framer motion transition helper with a basic 'fade' transition to get started*
+    |-- globalscroll.js *// push locomotive scroll event to context or global window event*
+|-- context
+    |-- state.js  *// default react context initiation, currently preset to store contextual locomotive scroll event*
 |-- pages
     |-- _app.js *// Includes default SEO component, Framer motion AnimatePresence & Locomotive Scroll init*
     |-- _document.js *// Default Next document component*
